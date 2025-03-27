@@ -6,4 +6,4 @@ html - N/A
 
 css - N/A
 
-javascript - N/A
+javascript - Amari
