@@ -2,7 +2,7 @@ kush pe merr n dor html ose css ose javascriptin shkruni posht
 
 
 
-html - N/A
+html - Doni
 
 css - N/A
 
