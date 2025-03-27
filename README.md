@@ -6,4 +6,4 @@ html - Doni
 
 css - N/A
 
-javascript - N/A
+javascript - Amari
