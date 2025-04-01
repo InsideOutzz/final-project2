@@ -10,13 +10,13 @@ body, h1, h2, p, ul {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #acacacab;
     color: #333;
 }
 
 /* Style the header */
 header {
-    background: #007BFF;
+    background: #001730;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -37,6 +37,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    
 }
 
 nav ul li a:hover {
@@ -70,6 +71,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    font-family: sans-serif;
 }
 
 /* Responsive design */
