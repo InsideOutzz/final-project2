@@ -21,7 +21,13 @@
     </header>
 
     <footer>
-        <span id="year"></span><p>&copy; Digital School. All rights reserved.</p>
+        <p class="text-center">Copyright &copy; Digital School
+            <script>
+                var CurrentYear = new Date().getFullYear()
+                document.write(CurrentYear)
+            </script>
+        </p>
+    </footer>
     
     <script src="js/main.js"></script>
 </body>
