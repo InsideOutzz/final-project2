@@ -12,12 +12,14 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault();
       loginSection.style.display = 'none'; // Hide login form
       signUpSection.style.display = 'block'; // Show sign-up form
+      signUpSection.style.visibility = "false"
     });
     
     signInButton.addEventListener('click', function (e) {
       e.preventDefault();
       signUpSection.style.display = 'none'; // Hide sign-up form
       loginSection.style.display = 'block'; // Show login form
+      loginSection.style.visibility = "true"
     });
   
     // Handle form submission for Sign Up
