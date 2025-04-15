@@ -1,72 +1,121 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Product Store</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Store</title>
     <link rel="stylesheet" href="css/product.css" />
-	<link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="" id="navbar__logo"><i class="fas fa-gem"></i>NEXT</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="tech.html" target="_self" class="navbar__links">Tech</a>
+          </li>
+          <li class="navbar__item">
+            <a href="product.html" target="_self" class="navbar__links">Products</a>
+          </li>
+          <li class="navbar__btn"><a href="singup.html" target="_blank" class="button">Sign Up</a></li>
+        </ul>
+      </div>
+    </nav>
 
-	<nav class="navbar">
-		<div class="navbar__container">
-		  <a href="" id="navbar__logo"><i class="fas fa-gem"></i>NEXT</a>
-		  <div class="navbar__toggle" id="mobile-menu">
-			<span class="bar"></span> <span class="bar"></span>
-			<span class="bar"></span>
-		  </div>
-		  <ul class="navbar__menu">
-			<li class="navbar__item">
-			  <a href="" class="navbar__links">Home</a>
-			</li>
-			<li class="navbar__item">
-			  <a href="tech.html" target="_self" class="navbar__links">Tech</a>
-			</li>
-			<li class="navbar__item">
-			  <a href="product.html" target="_self" class="navbar__links">Products</a>
-			</li>
-			<li class="navbar__btn"><a href="singup.html" target="_blank"  class="button">Sign Up</a></li>
-  
-		  </ul>
-		</div>
-	  </nav>
-	<main>
-		<section id="products">
-			<h2>Our Products</h2>
-			<ul>
-				<li>
-					<h3>Product 1</h3>
-                    <img src="images/vr.jpg" id="firstimg">
-					<p>These Are Oculus Rift S VR Headset | You Go Completly In a Different World When You`re Wearing These</p><br>
-					<p class="vr_class">Price: $149.99</p><br>
-                    <p class="classvr">Price: $99.99</p>
-					<button>Add to Cart</button>
-				</li>
-				<li>
-					<h3>Product 2</h3>
-                    <img src="images/i9.jpg" id="secondimg">
-					<p>This Is An Intel Core i9-12900K up to 5.2GHz - CPU- Macrotronics - For a Better Performance Of Your PC</p><br>
-					<p id="i9_price">Price: $479.99</p><br>
-                    <p id="pricei9">Price: $399.99</p>
-					<button>Add to Cart</button>
-				</li>
+    <main>
+      <section id="products">
+        <h2>Our Products</h2>
+        <ul>
+          <li>
+            <h3>Product 1</h3>
+            <img src="images/vr.jpg" id="firstimg" alt="Oculus Rift S VR Headset">
+            <p>These Are Oculus Rift S VR Headset | You Go Completely In a Different World When You`re Wearing These</p><br>
+            <p class="vr_class">Price: $149.99</p><br>
+            <p class="classvr">Price: $99.99</p>
+            <button>Add to Cart</button>
+          </li>
+          <li>
+            <h3>Product 2</h3>
+            <img src="images/i9.jpg" id="secondimg" alt="Intel Core i9-12900K CPU">
+            <p>This Is An Intel Core i9-12900K up to 5.2GHz - CPU- Macrotronics - For a Better Performance Of Your PC</p><br>
+            <p id="i9_price">Price: $479.99</p><br>
+            <p id="pricei9">Price: $399.99</p>
+            <button>Add to Cart</button>
+          </li>
+          <li>
+            <h3>Product 3</h3>
+            <img src="images/ps5.png" id="thirdimg" alt="PlayStation 5">
+            <p>The PlayStation 5 (PS5) is a home video game console developed by Sony Interactive Entertainment.</p><br>
+            <p id="i9_price">Price: $600</p><br>
+            <p id="pricei9">Price: $499</p>
+            <button>Add to Cart</button>
+          </li>
+        </ul>
+      </section>
 
-				<li>
-					<h3>Product 3</h3>
-                    <img src="images/ps5.png" id="thirdimg">
-					<p>The PlayStation 5 (PS5) is a home video game console developed by Sony Interactive Entertainment.</p><br>
-					<p id="i9_price">Price: $600</p><br>
-                    <p id="pricei9">Price: $499</p>
-					<button>Add to Cart</button>
-				</li>
-			</ul>
-		</section>
+      <section id="features">
+        <h2>Why Choose Us?</h2>
+        <div class="features__container">
+          <div class="feature">
+            <h3>High Quality Products</h3>
+            <p>We provide top-notch products with the latest technology to meet all your needs.</p>
+          </div>
+          <div class="feature">
+            <h3>Affordable Prices</h3>
+            <p>We offer competitive prices that ensure great value for your money.</p>
+          </div>
+          <div class="feature">
+            <h3>Excellent Customer Service</h3>
+            <p>Our dedicated support team is always available to assist you with any inquiries or concerns.</p>
+          </div>
+        </div>
+      </section>
 
+      <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial__container">
+          <div class="testimonial">
+            <p>"This store has the best customer service and the latest tech. I bought the Oculus Rift S VR headset, and it's amazing!"</p>
+            <p><strong>- Daja i Filanit</strong></p>
+          </div>
+          <div class="testimonial">
+            <p>"The Intel Core i9 CPU is a game-changer for my PC. It works incredibly fast and efficiently!"</p>
+            <p><strong>- Filani</strong></p>
+          </div>
+        </div>
+      </section>
 
-	<footer>
-		<p>&copy; 2025 Product Store</p>
-	</footer>
+      <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq__container">
+          <div class="faq__item">
+            <h3>What payment methods do you accept?</h3>
+            <p>We accept all major credit cards, PayPal, and other secure payment options.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Do you offer worldwide shipping?</h3>
+            <p>Yes, we offer worldwide shipping to most countries. Shipping costs may vary depending on your location.</p>
+          </div>
+          <div class="faq__item">
+            <h3>How do I track my order?</h3>
+            <p>Once your order is shipped, we will send you a tracking number via email to keep you updated.</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <script type="text/javascript" src="script.js"></script> 
+    <footer>
+      <p>&copy; 2025 Product Store. All rights reserved.</p>
+    </footer>
 
-</body>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>

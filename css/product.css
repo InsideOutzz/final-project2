@@ -146,3 +146,78 @@ footer {
     color: green;
 }
 
+/* Features Section */
+#features {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .features__container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .feature {
+    width: 200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Testimonials Section */
+  #testimonials {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .testimonial__container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .testimonial {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial p {
+    font-style: italic;
+  }
+  
+  /* FAQ Section */
+  #faq {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .faq__container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq__item {
+    margin-bottom: 20px;
+  }
+  
+  .faq__item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .faq__item p {
+    color: #555;
+  }
+  
