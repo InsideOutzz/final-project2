@@ -1,137 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Store</title>
     <link rel="stylesheet" href="css/product.css" />
     <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
+</head>
+<body>
     <nav class="navbar">
-      <div class="navbar__container">
-        <a href="" id="navbar__logo"><i class="fas fa-gem"></i>NEXT</a>
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span> <span class="bar"></span>
-          <span class="bar"></span>
+        <div class="navbar__container">
+            <a href="" id="navbar__logo"><i class="fas fa-gem"></i>NEXT</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span> <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
+                <li class="navbar__item"><a href="tech.html" class="navbar__links">Tech</a></li>
+                <li class="navbar__item"><a href="product.html" class="navbar__links">Products</a></li>
+                <li class="navbar__btn"><a href="signup.html" class="button">Sign Up</a></li>
+            </ul>
         </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="index.html" class="navbar__links">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="tech.html" target="_self" class="navbar__links">Tech</a>
-          </li>
-          <li class="navbar__item">
-            <a href="product.html" target="_self" class="navbar__links">Products</a>
-          </li>
-          <li class="navbar__btn"><a href="singup.html" target="_blank" class="button">Sign Up</a></li>
-        </ul>
-      </div>
     </nav>
 
     <main>
-      <section id="products">
-        <h2>Our Products</h2>
-        <ul>
-          <li>
-            <h3>Product 1</h3>
-            <img src="images/vr.jpg" id="firstimg" alt="Oculus Rift S VR Headset">
-            <p>These Are Oculus Rift S VR Headset | You Go Completely In a Different World When You`re Wearing These</p><br>
-            <p class="vr_class">Price: $149.99</p><br>
-            <p class="classvr">Price: $99.99</p>
-            <button>Add to Cart</button>
-          </li>
-          <li>
-            <h3>Product 2</h3>
-            <img src="images/i9.jpg" id="secondimg" alt="Intel Core i9-12900K CPU">
-            <p>This Is An Intel Core i9-12900K up to 5.2GHz - CPU- Macrotronics - For a Better Performance Of Your PC</p><br>
-            <p id="i9_price">Price: $479.99</p><br>
-            <p id="pricei9">Price: $399.99</p>
-            <button>Add to Cart</button>
-          </li>
-          <li>
-            <h3>Product 3</h3>
-            <img src="images/ps5.png" id="secondimg" alt="PlayStation 5">
-            <p>The PlayStation 5 (PS5) is a home video game console developed by Sony Interactive Entertainment.</p><br>
-            <p id="i9_price">Price: $600</p><br>
-            <p id="pricei9">Price: $499</p>
-            <button>Add to Cart</button>
-          </li>
-		  <li>
-            <h3>Product 4</h3>
-            <img src="images/headphones.jpg" id="secondimg" alt="Gaming headphones">
-            <p>The EKSA [2025 New] Fenrir Gaming Headset is a versatile and comfortable audio solution for gamers, compatible with PS4, PS5, Xbox One, Nintendo Switch, and PC.</p><br>
-            <p id="i9_price">Price: $500</p><br>
-            <p id="pricei9">Price: $439</p>
-            <button>Add to Cart</button>
-          </li>
-		  <li>
-            <h3>Product 5</h3>
-            <img src="images/xbox.jpg" id="secondimg" alt="xbox">
-            <p>The new Xbox in 2025 includes a gaming handheld set to launch later this year, while a full next-gen console is expected in 2027. </p><br>
-            <p id="i9_price">Price: $1000</p><br>
-            <p id="pricei9">Price: $810</p>
-            <button>Add to Cart</button>
-          </li>
-        </ul>
-      </section>
-
-      <section id="features">
-        <h2>Why Choose Us?</h2>
-        <div class="features__container">
-          <div class="feature">
-            <h3>High Quality Products</h3>
-            <p>We provide top-notch products with the latest technology to meet all your needs.</p>
-          </div>
-          <div class="feature">
-            <h3>Affordable Prices</h3>
-            <p>We offer competitive prices that ensure great value for your money.</p>
-          </div>
-          <div class="feature">
-            <h3>Excellent Customer Service</h3>
-            <p>Our dedicated support team is always available to assist you with any inquiries or concerns.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="testimonials">
-        <h2>What Our Customers Say</h2>
-        <div class="testimonial__container">
-          <div class="testimonial">
-            <p>"This store has the best customer service and the latest tech. I bought the Oculus Rift S VR headset, and it's amazing!"</p>
-            <p><strong>- Daja i Filanit</strong></p>
-          </div>
-          <div class="testimonial">
-            <p>"The Intel Core i9 CPU is a game-changer for my PC. It works incredibly fast and efficiently!"</p>
-            <p><strong>- Filani</strong></p>
-          </div>
-        </div>
-      </section>
-
-      <section id="faq">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq__container">
-          <div class="faq__item">
-            <h3>What payment methods do you accept?</h3>
-            <p>We accept all major credit cards, PayPal, and other secure payment options.</p>
-          </div>
-          <div class="faq__item">
-            <h3>Do you offer worldwide shipping?</h3>
-            <p>Yes, we offer worldwide shipping to most countries. Shipping costs may vary depending on your location.</p>
-          </div>
-          <div class="faq__item">
-            <h3>How do I track my order?</h3>
-            <p>Once your order is shipped, we will send you a tracking number via email to keep you updated.</p>
-          </div>
-        </div>
-      </section>
+        <section id="products">
+            <h2>Our Products</h2>
+            <ul class="product-list">
+                <li class="product-item">
+                    <h3>Oculus Rift S VR Headset</h3>
+                    <img src="images/vr.jpg" class="product-img" alt="Oculus Rift S VR Headset">
+                    <p>Step into a new world of immersive gaming and entertainment.</p>
+                    <p class="original-price">Price: $149.99</p>
+                    <p class="discount-price">Discounted Price: $99.99</p>
+                    <button class="cart-btn">Add to Cart</button>
+                </li>
+                <li class="product-item">
+                    <h3>Intel Core i9-12900K</h3>
+                    <img src="images/i9.jpg" class="product-img" alt="Intel Core i9-12900K CPU">
+                    <p>Power up your PC with extreme speed and efficiency.</p>
+                    <p class="original-price">Price: $479.99</p>
+                    <p class="discount-price">Discounted Price: $399.99</p>
+                    <button class="cart-btn">Add to Cart</button>
+                </li>
+                <li class="product-item">
+                    <h3>PlayStation 5</h3>
+                    <img src="images/ps5.png" class="product-img" alt="PlayStation 5">
+                    <p>Experience next-gen gaming with stunning visuals and fast performance.</p>
+                    <p class="original-price">Price: $600</p>
+                    <p class="discount-price">Discounted Price: $499</p>
+                    <button class="cart-btn">Add to Cart</button>
+                </li>
+                <li class="product-item">
+                    <h3>EKSA Fenrir Gaming Headset</h3>
+                    <img src="images/headphones.jpg" class="product-img" alt="Gaming headphones">
+                    <p>Enjoy crystal-clear audio and deep bass while gaming.</p>
+                    <p class="original-price">Price: $500</p>
+                    <p class="discount-price">Discounted Price: $439</p>
+                    <button class="cart-btn">Add to Cart</button>
+                </li>
+                <li class="product-item">
+                    <h3>Xbox Series X (2025)</h3>
+                    <img src="images/xbox.jpg" class="product-img" alt="Xbox Series X">
+                    <p>The next evolution in console gaming, coming soon!</p>
+                    <p class="original-price">Price: $1000</p>
+                    <p class="discount-price">Discounted Price: $810</p>
+                    <button class="cart-btn">Add to Cart</button>
+                </li>
+            </ul>
+        </section>
     </main>
 
     <footer>
-      <p>&copy; 2025 Product Store. All rights reserved.</p>
+        <p>&copy; 2025 Next Product Store. All rights reserved.</p>
     </footer>
 
     <script type="text/javascript" src="script.js"></script>
-  </body>
+</body>
 </html>
