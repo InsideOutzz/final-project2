@@ -1,71 +1,53 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Elements
-    const signUpForm = document.querySelector('.form-box.register form');
-    const loginForm = document.querySelector('.form-box.login form');
-    const signUpButton = document.querySelector('.register-link');
-    const signInButton = document.querySelector('.login-link');
-    const signUpSection = document.querySelector('.form-box.register');
-    const loginSection = document.querySelector('.form-box.login');
-    
-    // Handle form switch (Sign up / Sign In)
-    signUpButton.addEventListener('click', function (e) {
-      e.preventDefault();
-      loginSection.style.display = 'none'; // Hide login form
-      signUpSection.style.display = 'block'; // Show sign-up form
-      signUpSection.style.visibility = "false"
-    });
-    
-    signInButton.addEventListener('click', function (e) {
-      e.preventDefault();
-      signUpSection.style.display = 'none'; // Hide sign-up form
-      loginSection.style.display = 'block'; // Show login form
-      loginSection.style.visibility = "true"
-    });
-  
-    // Handle form submission for Sign Up
-    signUpForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-  
-      const username = signUpForm.querySelector('input[type="text"]').value;
-      const email = signUpForm.querySelector('input[type="email"]').value;
-      const password = signUpForm.querySelector('input[type="password"]').value;
-      const termsCheckbox = signUpForm.querySelector('input[type="checkbox"]');
-  
-      // Basic validation for sign up form
-      if (!username || !email || !password) {
-        alert("Please fill all the fields.");
-        return;
-      }
-  
-      if (!termsCheckbox.checked) {
-        alert("You must agree with the terms of service.");
-        return;
-      }
-  
-      // For demo purposes, we show a success alert
-      alert(`Welcome, ${username}! Your account has been created successfully.`);
-  
-      // Optionally, reset the form after submission
-      signUpForm.reset();
-    });
-  
-    // Handle form submission for Sign In (Just basic validation)
-    loginForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-  
-      const email = loginForm.querySelector('input[type="email"]').value;
-      const password = loginForm.querySelector('input[type="password"]').value;
-  
-      // Basic validation for login form
-      if (!email || !password) {
-        alert("Please enter both email and password.");
-        return;
-      }
-  
-      // For demo purposes, we show a login success alert
-      alert(`Logged in successfully with email: ${email}`);
-  
-      // Optionally, reset the form after submission
-      loginForm.reset();
-    });
+document.addEventListener("DOMContentLoaded", () => {
+  const loginFormBox = document.querySelector('.form-box.login');
+  const signUpFormBox = document.querySelector('.form-box.register');
+  const loginLink = document.querySelector('.login-link');
+  const registerLink = document.querySelector('.register-link');
+  const loginSection = document.querySelector('.login-section');
+
+  registerLink.addEventListener('click', () => {
+    loginSection.classList.add('active');
   });
+
+  loginLink.addEventListener('click', () => {
+    loginSection.classList.remove('active');
+  });
+
+  const signUpForm = document.querySelector('.form-box.register form');
+  signUpForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const username = document.querySelector('.form-box.register input[type="text"]');
+    const email = document.querySelector('.form-box.register input[type="email"]');
+    const password = document.querySelector('.form-box.register input[type="password"]');
+    const termsCheckbox = document.querySelector('.form-box.register input[type="checkbox"]');
+
+    if (!username.value || !email.value || !password.value) {
+      alert("All fields are required!");
+      return;
+    }
+
+    if (!termsCheckbox.checked) {
+      alert("You must agree to the terms of service.");
+      return;
+    }
+
+    alert("Sign Up Successful!");
+    window.location.href = "index.html"; 
+  });
+
+  const loginForm = document.querySelector('.form-box.login form');
+  loginForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const loginEmail = document.querySelector('.form-box.login input[type="email"]');
+    const loginPassword = document.querySelector('.form-box.login input[type="password"]');
+
+    if (!loginEmail.value || !loginPassword.value) {
+      alert("Both email and password are required!");
+      return;
+    }
+
+    alert("Login Successful!");
+  });
+});

@@ -4,46 +4,41 @@
     <title>Sign Up Page</title>
     <link rel="stylesheet" href="css/singup.css">
     <link rel="stylesheet" href="css/style.css">
-    
 </head>
 <body>
     <!-- NAVBAR CREATION -->
     <nav class="navbar">
-		<div class="navbar__container">
-		  <a href="" id="navbar__logo"><i class="fas fa-gem"></i>NEXT</a>
-		  <div class="navbar__toggle" id="mobile-menu">
-			<span class="bar"></span> <span class="bar"></span>
-			<span class="bar"></span>
-		  </div>
-		  <ul class="navbar__menu">
-			<li class="navbar__item">
-			  <a href="index.html" class="navbar__links">Home</a>
-			</li>
-			<li class="navbar__item">
-			  <a href="tech.html" target="_self" class="navbar__links">Tech</a>
-			</li>
-			<li class="navbar__item">
-			  <a href="product.html" target="_self" class="navbar__links">Products</a>
-			</li>
-			<li class="navbar__btn"><a href="singup.html" target="_blank"  class="button">Sign Up</a></li>
-  
-		  </ul>
-		</div>
-	  </nav>
+        <div class="navbar__container">
+            <a href="" id="navbar__logo"><i class="fas fa-gem"></i>NEXT</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span> <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="tech.html" target="_self" class="navbar__links">Tech</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="product.html" target="_self" class="navbar__links">Products</a>
+                </li>
+                <li class="navbar__btn"><a href="singup.html" target="_blank" class="button">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <form action="" class="search-bar">
-       <input type="text" placeholder="Search...">
-       <button><i class='bx bx-search'></i></button>
+        <input type="text" placeholder="Search...">
+        <button><i class='bx bx-search'></i></button>
     </form>
-   </header>
+
     <!-- LOGIN FORM CREATION -->
     <div class="background"></div>
     <div class="container">
         <div class="item">
-            <h2 class="logo"><i class='bx bxl-xing'></i>NEXT GENERATION
-                TECHNOLOGY </h2>
+            <h2 class="logo"><i class='bx bxl-xing'></i>NEXT GENERATION TECHNOLOGY </h2>
             <div class="text-item">
-                
-                </span></h2>
                 <p>Here you can Sign Up to our website thank you !</p>
                 <div class="social-icon">
                     <a href="#"><i class='bx bxl-facebook'></i></a>
@@ -54,17 +49,19 @@
                 </div>
             </div>
         </div>
+
         <div class="login-section">
+            <!-- Sign In Form -->
             <div class="form-box login">
                 <form action="">
                     <h2>Sign In</h2>
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-envelope'></i></span>
                         <input type="email" required>
-                        <label >Email</label>
+                        <label>Email</label>
                     </div>
                     <div class="input-box">
-                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
                         <input type="password" required>
                         <label>Password</label>
                     </div>
@@ -78,30 +75,30 @@
                     </div>
                 </form>
             </div>
-            <div class="form-box-login">
+
+            <!-- Sign Up Form -->
+            <div class="form-box register">
                 <form action="">
-
                     <h2>Sign Up</h2>
-
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-user'></i></span>
                         <input type="text" required>
-                        <label >Username</label>
+                        <label>Username</label>
                     </div>
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-envelope'></i></span>
                         <input type="email" required>
-                        <label >Email</label>
+                        <label>Email</label>
                     </div>
                     <div class="input-box">
-                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
                         <input type="password" required>
                         <label>Password</label>
                     </div>
                     <div class="remember-password">
                         <label for=""><input type="checkbox">I agree with the <a href="tos.html">terms of service</a></label>
                     </div>
-                    <button class="btn">Login In</button>
+                    <button class="btn">Sign Up</button>
                     <div class="create-account">
                         <p>Already Have An Account? <a href="#" class="login-link">Sign In</a></p>
                     </div>
@@ -109,9 +106,8 @@
             </div>
         </div>
     </div>
-     <!-- SIGN UP FORM CREATION -->
 
+    <!-- JavaScript -->
     <script src="java/index.js"></script>
 </body>
-
 </html>

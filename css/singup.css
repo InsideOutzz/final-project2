@@ -9,7 +9,6 @@ body{
     height: 100vh;
     width: 100%;
     background: #000;
-
 }
 .background{
     background: url(https://img.freepik.com/free-vector/gradient-futuristic-background-with-connection-concept_23-2149110798.jpg) no-repeat;
@@ -19,7 +18,6 @@ body{
     width: 100%;
     filter: blur(10px);
 }
-
 .header{
     position: fixed;
     top: 0;
@@ -31,7 +29,6 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-
 }
 .navbar a{
     position: relative;
@@ -103,8 +100,6 @@ body{
     background-size:cover ;
     border-radius: 20px;
     overflow: hidden;
-
-
 }
 .item{
     position: absolute;
@@ -118,14 +113,10 @@ body{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
-
-
 }
 .item .logo{
     color: #fff;
     font-size: 30px;
-
 }
 .text-item h2{
     font-size: 40px;
@@ -154,7 +145,6 @@ body{
     color: #fff;
     backdrop-filter: blur(10px);
 }
-
 .login-section .form-box{
     position: absolute;
     display: flex;
@@ -162,7 +152,6 @@ body{
     align-items: center;
     width: 100%;
     height: 100%;
-
 }
 .login-section .form-box.register{
     transform: translateX(430px);
@@ -173,7 +162,6 @@ body{
     transform: translateX(0px);
     transition-delay: .7s;
 }
-
 .login-section .form-box.login{
     transform: translateX(0px);
     transition: transform .6s ease;
@@ -183,14 +171,10 @@ body{
     transform: translateX(430px);
     transition-delay: 0s;
 }
-
-
-
 .login-section .form-box h2{
     text-align: center;
     font-size: 25px;
 }
-
 .form-box .input-box{
     width: 340px;
     height: 50px;
@@ -206,8 +190,6 @@ body{
     outline: none;
     font-size: 16px;
     padding-right: 28px;
-
-
 }
 .input-box label{
     position: absolute;
@@ -218,7 +200,6 @@ body{
     font-weight: 600px;
     pointer-events: none;
     transition: .5s ease;
-
 }
 .input-box .icon{
     position: absolute;
@@ -240,7 +221,6 @@ body{
 .remember-password label input{
     accent-color: #fff;
     margin-right: 3px;
-
 }
 .remember-password a{
     color: #fff;
@@ -261,7 +241,6 @@ body{
     font-size: 16px;
     color: #fff;
     box-shadow: rgba(0,0,0,0.4);
-
 }
 .create-account{
     font-size: 14.5px;
@@ -276,7 +255,6 @@ body{
 .create-account p a:hover{
     text-decoration: underline;
 }
-
 .form-box-login{
     visibility: hidden;
     position: absolute;
@@ -286,4 +264,27 @@ body{
     width: 100%;
     height: 100%;
 }
-    
+.login-section .form-box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease, visibility 0s ease 0.6s;
+}
+.login-section .form-box.register {
+    transform: translateX(430px);
+    visibility: hidden;
+}
+.login-section.active .form-box.register {
+    transform: translateX(0px);
+    visibility: visible;
+    transition: transform 0.6s ease, visibility 0s ease 0s;
+}
+.login-section .form-box.login {
+    transform: translateX(0px);
+}
+.login-section.active .form-box.login {
+    transform: translateX(430px);
+}
